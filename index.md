@@ -1,32 +1,48 @@
 # Privacy Policy
 
-**Last updated:** July 2026
+**Last updated: July 2026**
 
 ## Introduction
 
-Luong Quan Nhan is an application that helps users estimate military salary based on publicly available salary coefficients and information entered by the user.
+Luong Quan Nhan is an independent application that helps users estimate military salary based on publicly available salary information and information entered by the user.
+
+This application is not an official application and does not represent any government agency, military unit, or organization.
 
 ## Information Collection
 
-This application does not require users to create an account.
+The application does not require users to create an account.
 
-This application does not collect, store, or transmit personal information to the developer.
+The application does not collect, store, or transmit personal information entered by users to the developer.
 
 Salary calculations are performed locally on the user's device.
 
 ## Data Storage
 
-Some settings, such as the application unlock status, may be stored locally on the device using local storage. This information never leaves the user's device.
+Some application settings and usage information may be stored locally on the user's device to support application functionality.
+
+Locally stored information is not transmitted to the developer or to an external server by the application.
 
 ## Third-Party Services
 
-The current version of the application does not require users to provide personal information.
+The application may use third-party services necessary to provide and support its features.
 
-Future versions may integrate services such as Google Play Billing or Google AdMob. If these services are added, this Privacy Policy will be updated accordingly.
+Data handled directly by third-party services, if applicable, is subject to the privacy practices and policies of those service providers.
 
 ## Children's Privacy
 
 The application is not specifically directed toward children.
+
+## Disclaimer
+
+This application is an independent reference tool and is not affiliated with, endorsed by, or an official application of any government agency, military unit, or organization.
+
+Salary calculation results are provided for reference purposes only. Actual salary amounts may vary depending on applicable regulations, allowances, deductions, and individual circumstances.
+
+## Changes to This Privacy Policy
+
+This Privacy Policy may be updated when necessary to reflect changes to the application or applicable requirements.
+
+Any updates will be published on this page.
 
 ## Contact
 
