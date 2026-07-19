@@ -1,5 +1,5 @@
 # Nguồn tham khảo
-Thông tin trong ứng dụng được tổng hợp, đối chiếu từ các văn bản quy phạm pháp luật và thông tin công khai của cơ quan nhà nước có thẩm quyền. Dưới đây là một số nguồn tham khảo được công khai;
+Thông tin trong ứng dụng được tổng hợp, đối chiếu từ các văn bản quy phạm pháp luật và thông tin công khai của cơ quan nhà nước có thẩm quyền. Dưới đây là một số nguồn tham khảo được công khai:
 
 - Thông tư số 74/2026/TT-BQP ngày 16/6/2026 của Bộ Quốc phòng về hướng dẫn thực hiện mức lương cơ sở mới và bảng lương phụ cấp trong quân đội từ 01/7/2026.
 - Nghị định số 34/2012/NĐ-CP ngày 15/4/2012 của Chính phủ về Chế độ phụ cấp công vụ.
