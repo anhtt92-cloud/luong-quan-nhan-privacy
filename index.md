@@ -1,4 +1,4 @@
-Chính sách quyền riêng tư
+#Chính sách quyền riêng tư
 
 Cập nhật lần cuối: Tháng 7 năm 2026
 
