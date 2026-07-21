@@ -1,51 +1,51 @@
-# Privacy Policy
+Chính sách quyền riêng tư
 
-**Last updated: July 2026**
+Cập nhật lần cuối: Tháng 7 năm 2026
 
-## Introduction
+Giới thiệu
 
-Luong Quan Nhan is an independent application that helps users estimate military salary based on publicly available salary information and information entered by the user.
+Lương Quân Nhân là một ứng dụng độc lập giúp người dùng ước tính tiền lương quân nhân dựa trên các thông tin về chế độ tiền lương được công khai và thông tin do người dùng nhập vào.
 
-This application is not an official application and does not represent any government agency, military unit, or organization.
+Ứng dụng này không phải là ứng dụng chính thức và không đại diện cho bất kỳ cơ quan nhà nước, đơn vị quân đội hoặc tổ chức nào.
 
-## Information Collection
+Thu thập thông tin
 
-The application does not require users to create an account.
+Ứng dụng không yêu cầu người dùng tạo tài khoản.
 
-The application does not collect, store, or transmit personal information entered by users to the developer.
+Ứng dụng không thu thập, lưu trữ hoặc truyền đến nhà phát triển các thông tin cá nhân do người dùng nhập vào.
 
-Salary calculations are performed locally on the user's device.
+Việc tính toán tiền lương được thực hiện cục bộ trên thiết bị của người dùng.
 
-## Data Storage
+Lưu trữ dữ liệu
 
-Some application settings and usage information may be stored locally on the user's device to support application functionality.
+Một số cài đặt của ứng dụng và thông tin sử dụng có thể được lưu trữ cục bộ trên thiết bị của người dùng nhằm hỗ trợ hoạt động của ứng dụng.
 
-Locally stored information is not transmitted to the developer or to an external server by the application.
+Thông tin được lưu trữ cục bộ không được ứng dụng truyền đến nhà phát triển hoặc máy chủ bên ngoài.
 
-## Third-Party Services
+Dịch vụ của bên thứ ba
 
-The application may use third-party services necessary to provide and support its features.
+Ứng dụng có thể sử dụng các dịch vụ của bên thứ ba cần thiết để cung cấp và hỗ trợ các tính năng của ứng dụng.
 
-Data handled directly by third-party services, if applicable, is subject to the privacy practices and policies of those service providers.
+Dữ liệu do các dịch vụ của bên thứ ba trực tiếp xử lý, nếu có, sẽ tuân theo chính sách và quy định về quyền riêng tư của các nhà cung cấp dịch vụ đó.
 
-## Children's Privacy
+Quyền riêng tư của trẻ em
 
-The application is not specifically directed toward children.
+Ứng dụng không được thiết kế dành riêng cho trẻ em.
 
-## Disclaimer
+Tuyên bố miễn trừ trách nhiệm
 
-This application is an independent reference tool and is not affiliated with, endorsed by, or an official application of any government agency, military unit, or organization.
+Ứng dụng này là một công cụ tham khảo độc lập, không có liên kết, không được xác nhận và không phải là ứng dụng chính thức của bất kỳ cơ quan nhà nước, đơn vị quân đội hoặc tổ chức nào.
 
-Salary calculation results are provided for reference purposes only. Actual salary amounts may vary depending on applicable regulations, allowances, deductions, and individual circumstances.
+Kết quả tính lương chỉ mang tính chất tham khảo. Mức lương thực tế có thể khác tùy thuộc vào các quy định hiện hành, phụ cấp, các khoản khấu trừ và hoàn cảnh cụ thể của từng cá nhân.
 
-## Changes to This Privacy Policy
+Thay đổi Chính sách quyền riêng tư
 
-This Privacy Policy may be updated when necessary to reflect changes to the application or applicable requirements.
+Chính sách quyền riêng tư này có thể được cập nhật khi cần thiết để phản ánh những thay đổi của ứng dụng hoặc các yêu cầu có liên quan.
 
-Any updates will be published on this page.
+Mọi nội dung cập nhật sẽ được công bố trên trang này.
 
-## Contact
+Liên hệ
 
-If you have any questions regarding this Privacy Policy, please contact:
+Nếu bạn có bất kỳ câu hỏi nào liên quan đến Chính sách quyền riêng tư này, vui lòng liên hệ:
 
 Email: anhtt92@gmail.com
