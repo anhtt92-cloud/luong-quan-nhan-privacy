@@ -14,26 +14,24 @@ layout: null
 
   <meta
     http-equiv="refresh"
-    content="0; url=https://tt92-cloud.github.io/luong-quan-nhan-privacy/#sources"
+    content="0; url=https://anhtt92-cloud.github.io/luong-quan-nhan-privacy/#sources"
   >
 
   <title>Chuyển đến nguồn thông tin</title>
 
   <script>
     window.location.replace(
-      "https://tt92-cloud.github.io/luong-quan-nhan-privacy/#sources"
+      "https://anhtt92-cloud.github.io/luong-quan-nhan-privacy/#sources"
     );
   </script>
 </head>
 
 <body>
-  <p>
-    Đang chuyển đến trang nguồn thông tin chính thức...
-  </p>
+  <p>Đang chuyển đến trang nguồn thông tin...</p>
 
   <p>
     <a
-      href="https://tt92-cloud.github.io/luong-quan-nhan-privacy/#sources"
+      href="https://anhtt92-cloud.github.io/luong-quan-nhan-privacy/#sources"
     >
       Bấm vào đây nếu trang không tự chuyển
     </a>
