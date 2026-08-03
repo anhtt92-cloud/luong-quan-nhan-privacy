@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Nguồn thông tin, tuyên bố miễn trừ trách nhiệm, chính sách quyền riêng tư và điều khoản sử dụng của ứng dụng Tính lương quân nhân."
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <title>
+    Tính lương quân nhân - Nguồn thông tin và Chính sách quyền riêng tư
+  </title>
+
+  <style>
+    :root {
+      --red-dark: rgb(121, 29, 10);
+      --red: rgb(153, 42, 13);
+      --red-light: rgb(180, 61, 24);
+      --gold: rgb(245, 190, 45);
+      --gold-light: rgb(255, 231, 143);
+      --cream: rgb(255, 248, 226);
+      --white: white;
+      --text: rgb(44, 44, 44);
+      --muted: rgb(99, 99, 99);
+      --border: rgb(225, 207, 158);
+      --green: rgb(24, 117, 72);
+      --blue: rgb(30, 93, 168);
+      --shadow: rgba(55, 28, 13, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background-color: var(--cream);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    .hero {
+      padding: 48px 20px 42px;
+      color: var(--white);
+      text-align: center;
+      background:
+        linear-gradient(
+          rgba(121, 29, 10, 0.94),
+          rgba(153, 42, 13, 0.94)
+        );
+      border-bottom: 5px solid var(--gold);
+    }
+
+    .hero-icon {
+      margin-bottom: 8px;
+      font-size: 46px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      color: var(--gold);
+      font-size: clamp(30px, 6vw, 48px);
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+
+    .hero h2 {
+      margin: 10px 0 0;
+      color: var(--white);
+      font-size: clamp(17px, 3vw, 23px);
+      font-weight: normal;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 18px auto 0;
+      color: var(--gold-light);
+    }
+
+    .navigation {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px;
+      background-color: var(--red-dark);
+      border-bottom: 2px solid var(--gold);
+    }
+
+    .navigation a {
+      padding: 9px 13px;
+      color: var(--white);
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      border: 1px solid rgba(245, 190, 45, 0.7);
+      border-radius: 8px;
+    }
+
+    .navigation a:hover {
+      color: var(--red-dark);
+      background-color: var(--gold);
+    }
+
+    .container {
+      width: min(100% - 28px, 980px);
+      margin: 26px auto 50px;
+    }
+
+    .notice {
+      margin-bottom: 24px;
+      padding: 24px;
+      background-color: var(--white);
+      border: 3px solid var(--gold);
+      border-left: 9px solid var(--red);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px var(--shadow);
+    }
+
+    .notice h2 {
+      margin-top: 0;
+      color: var(--red-dark);
+    }
+
+    .notice strong {
+      color: var(--red-dark);
+    }
+
+    .english-notice {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px dashed var(--border);
+    }
+
+    .english-notice h3 {
+      margin-top: 0;
+      color: var(--blue);
+    }
+
+    section {
+      margin-top: 26px;
+      padding: 26px;
+      background-color: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 7px 22px var(--shadow);
+      scroll-margin-top: 90px;
+    }
+
+    section > h2 {
+      margin-top: 0;
+      padding-bottom: 12px;
+      color: var(--red-dark);
+      font-size: 27px;
+      border-bottom: 3px solid var(--gold);
+    }
+
+    section h3 {
+      color: var(--red);
+    }
+
+    .section-intro {
+      margin-bottom: 24px;
+    }
+
+    .source-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .source-card {
+      padding: 20px;
+      background-color: rgb(255, 253, 245);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--gold);
+      border-radius: 12px;
+    }
+
+    .source-card h3 {
+      margin: 0 0 8px;
+      color: var(--red-dark);
+      font-size: 20px;
+    }
+
+    .source-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 9px;
+      color: var(--green);
+      background-color: rgb(231, 247, 238);
+      border: 1px solid rgb(155, 207, 179);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .tag.secondary {
+      color: var(--blue);
+      background-color: rgb(232, 242, 255);
+      border-color: rgb(158, 191, 229);
+    }
+
+    .source-description {
+      margin: 10px 0;
+    }
+
+    .english-description {
+      color: var(--muted);
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .source-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 11px 16px;
+      color: var(--white);
+      background-color: var(--red);
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .source-link:hover {
+      background-color: var(--red-dark);
+    }
+
+    .source-link.secondary-link {
+      margin-left: 6px;
+      background-color: var(--blue);
+    }
+
+    .source-link.secondary-link:hover {
+      background-color: rgb(20, 67, 125);
+    }
+
+    .url-label {
+      margin: 14px 0 5px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .full-url {
+      display: block;
+      max-width: 100%;
+      padding: 10px;
+      overflow-wrap: anywhere;
+      color: rgb(47, 74, 109);
+      background-color: rgb(244, 247, 250);
+      border: 1px solid rgb(211, 220, 230);
+      border-radius: 7px;
+      font-family:
+        Consolas,
+        "Courier New",
+        monospace;
+      font-size: 12px;
+    }
+
+    .official-portals {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .portal-card {
+      padding: 18px;
+      background-color: rgb(246, 249, 252);
+      border: 1px solid rgb(204, 216, 230);
+      border-radius: 10px;
+    }
+
+    .portal-card h3 {
+      margin-top: 0;
+      color: var(--blue);
+      font-size: 17px;
+    }
+
+    .portal-card a {
+      overflow-wrap: anywhere;
+    }
+
+    .policy-box {
+      padding: 18px;
+      background-color: rgb(255, 253, 245);
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+    }
+
+    .policy-list li {
+      margin-bottom: 10px;
+    }
+
+    .service-list {
+      display: grid;
+      gap: 12px;
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .service-list li {
+      padding: 14px;
+      background-color: rgb(247, 249, 252);
+      border: 1px solid rgb(215, 222, 230);
+      border-radius: 8px;
+    }
+
+    .service-list a {
+      overflow-wrap: anywhere;
+    }
+
+    .important {
+      padding: 16px;
+      color: var(--red-dark);
+      background-color: rgb(255, 242, 210);
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 30px 20px;
+      color: var(--white);
+      text-align: center;
+      background-color: var(--red-dark);
+      border-top: 5px solid var(--gold);
+    }
+
+    footer a {
+      color: var(--gold-light);
+    }
+
+    footer p {
+      margin: 7px 0;
+    }
+
+    .small-text {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 650px) {
+      .hero {
+        padding-top: 34px;
+      }
+
+      .container {
+        width: min(100% - 18px, 980px);
+      }
+
+      section,
+      .notice {
+        padding: 19px;
+      }
+
+      .navigation {
+        position: static;
+      }
+
+      .navigation a {
+        flex: 1 1 42%;
+        text-align: center;
+      }
+
+      .source-link {
+        display: block;
+        width: 100%;
+        margin: 8px 0 0;
+        text-align: center;
+      }
+
+      .source-link.secondary-link {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-icon" aria-hidden="true">★</div>
+
+    <h1>Tính lương quân nhân</h1>
+
+    <h2>
+      Nguồn thông tin, Chính sách quyền riêng tư
+      và Điều khoản sử dụng
+    </h2>
+
+    <p>
+      Military Salary Calculator – Information Sources,
+      Privacy Policy and Terms of Use
+    </p>
+  </header>
+
+  <nav class="navigation" aria-label="Điều hướng chính">
+    <a href="#disclaimer">Tuyên bố miễn trừ</a>
+    <a href="#sources">Nguồn thông tin</a>
+    <a href="#privacy">Quyền riêng tư</a>
+    <a href="#terms">Điều khoản</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+
+  <main class="container">
+    <div class="notice" id="disclaimer">
+      <h2>Tuyên bố miễn trừ trách nhiệm</h2>
+
+      <p>
+        <strong>
+          Ứng dụng Tính lương quân nhân là ứng dụng do cá nhân
+          phát triển độc lập.
+        </strong>
+      </p>
+
+      <p>
+        Ứng dụng không phải ứng dụng chính thức, không trực thuộc,
+        không được tài trợ, xác nhận hoặc ủy quyền bởi Bộ Quốc phòng,
+        Chính phủ Việt Nam hay bất kỳ cơ quan, đơn vị nhà nước nào.
+      </p>
+
+      <p>
+        Ứng dụng không đại diện cho bất kỳ cơ quan nhà nước nào và
+        không cung cấp dịch vụ hành chính công. Thông tin trong ứng
+        dụng được tổng hợp, đối chiếu từ các văn bản pháp luật và nguồn
+        thông tin công khai được liệt kê tại trang này.
+      </p>
+
+      <p>
+        <strong>
+          Kết quả tính toán chỉ mang tính tham khảo.
+        </strong>
+        Kết quả không thay thế bảng lương, quyết định, thông báo,
+        hướng dẫn hoặc kết luận chính thức của cơ quan có thẩm quyền.
+      </p>
+
+      <div class="english-notice">
+        <h3>Government affiliation disclaimer</h3>
+
+        <p>
+          <strong>
+            The Military Salary Calculator is independently developed
+            by an individual developer.
+          </strong>
+        </p>
+
+        <p>
+          This application is not an official government application.
+          It is not affiliated with, sponsored by, endorsed by or
+          authorized by the Ministry of National Defence, the
+          Government of Vietnam or any government agency.
+        </p>
+
+        <p>
+          The application does not represent a government entity and
+          does not provide government services. Information is compiled
+          and cross-referenced from publicly available legal documents
+          and official sources listed on this page.
+        </p>
+
+        <p>
+          <strong>
+            All calculation results are provided for reference only
+            and do not replace official salary records, decisions,
+            notices or instructions issued by competent authorities.
+          </strong>
+        </p>
+      </div>
+    </div>
+
+    <section id="sources">
+      <h2>Nguồn thông tin công khai</h2>
+
+      <div class="section-intro">
+        <p>
+          Danh sách dưới đây cung cấp đường dẫn trực tiếp đến các
+          văn bản và trang thông tin được sử dụng để đối chiếu dữ liệu
+          trong ứng dụng.
+        </p>
+
+        <p>
+          Mỗi địa chỉ URL được hiển thị đầy đủ và có thể bấm để mở
+          trong trình duyệt.
+        </p>
+
+        <p class="english-description">
+          The links below provide direct access to official legal
+          documents and publicly available information used as
+          references by the application.
+        </p>
+      </div>
+
+      <div class="source-list">
+        <article class="source-card">
+          <h3>
+            1. Nghị định số 161/2026/NĐ-CP
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn chính thức</span>
+            <span class="tag secondary">Chính phủ</span>
+          </div>
+
+          <p class="source-description">
+            Quy định mức lương cơ sở và chế độ tiền thưởng đối với
+            cán bộ, công chức, viên chức và lực lượng vũ trang.
+          </p>
+
+          <p class="english-description">
+            Decree on the statutory base salary and bonus regime for
+            public employees and the armed forces.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://vanban.chinhphu.vn/?docid=218107&pageid=27160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mở nguồn chính thức
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://vanban.chinhphu.vn/?docid=218107&pageid=27160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://vanban.chinhphu.vn/?docid=218107&amp;pageid=27160
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            2. Thông tư số 74/2026/TT-BQP
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn Chính phủ</span>
+            <span class="tag secondary">Bộ Quốc phòng</span>
+          </div>
+
+          <p class="source-description">
+            Hướng dẫn thực hiện mức lương cơ sở đối với các đối tượng
+            hưởng lương, phụ cấp quân hàm hoặc sinh hoạt phí trong các
+            cơ quan, đơn vị thuộc Bộ Quốc phòng.
+          </p>
+
+          <p class="english-description">
+            Guidance on implementation of the statutory base salary
+            within agencies and units under the Ministry of National
+            Defence.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://xaydungchinhsach.chinhphu.vn/toan-van-thong-tu-74-2026-tt-bqp-huong-dan-thuc-hien-muc-luong-co-so-trong-quan-doi-119260617100402887.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Xem toàn văn trên Cổng Chính phủ
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://xaydungchinhsach.chinhphu.vn/toan-van-thong-tu-74-2026-tt-bqp-huong-dan-thuc-hien-muc-luong-co-so-trong-quan-doi-119260617100402887.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://xaydungchinhsach.chinhphu.vn/toan-van-thong-tu-74-2026-tt-bqp-huong-dan-thuc-hien-muc-luong-co-so-trong-quan-doi-119260617100402887.htm
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            3. Bảng lương sĩ quan và phụ cấp chức vụ lãnh đạo
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn Chính phủ</span>
+            <span class="tag secondary">Bảng lương công khai</span>
+          </div>
+
+          <p class="source-description">
+            Bảng lương cấp bậc quân hàm sĩ quan, cấp hàm cơ yếu và
+            bảng phụ cấp chức vụ lãnh đạo trong Quân đội theo mức
+            lương cơ sở mới.
+          </p>
+
+          <p class="english-description">
+            Public salary tables for military officer ranks and
+            leadership position allowances.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://xaydungchinhsach.chinhphu.vn/bang-luong-cap-bac-quan-ham-si-quan-va-cap-ham-co-yeu-trong-quan-doi-theo-muc-luong-co-so-moi-11926061709041638.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Xem bảng lương chính thức
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://xaydungchinhsach.chinhphu.vn/bang-luong-cap-bac-quan-ham-si-quan-va-cap-ham-co-yeu-trong-quan-doi-theo-muc-luong-co-so-moi-11926061709041638.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://xaydungchinhsach.chinhphu.vn/bang-luong-cap-bac-quan-ham-si-quan-va-cap-ham-co-yeu-trong-quan-doi-theo-muc-luong-co-so-moi-11926061709041638.htm
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            4. Bảng lương quân nhân chuyên nghiệp và công nhân quốc phòng
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn Chính phủ</span>
+            <span class="tag secondary">Bảng lương công khai</span>
+          </div>
+
+          <p class="source-description">
+            Bảng lương quân nhân chuyên nghiệp, chuyên môn kỹ thuật
+            cơ yếu và công nhân quốc phòng theo mức lương cơ sở mới.
+          </p>
+
+          <p class="english-description">
+            Public salary tables for professional soldiers and
+            national defence workers.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://xaydungchinhsach.chinhphu.vn/bang-luong-quan-nhan-chuyen-nghiep-va-cong-nhan-quoc-phong-theo-muc-luong-co-so-moi-119260617091536339.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Xem bảng lương chính thức
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://xaydungchinhsach.chinhphu.vn/bang-luong-quan-nhan-chuyen-nghiep-va-cong-nhan-quoc-phong-theo-muc-luong-co-so-moi-119260617091536339.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://xaydungchinhsach.chinhphu.vn/bang-luong-quan-nhan-chuyen-nghiep-va-cong-nhan-quoc-phong-theo-muc-luong-co-so-moi-119260617091536339.htm
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            5. Nghị định số 204/2004/NĐ-CP
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn chính thức</span>
+            <span class="tag secondary">Chính phủ</span>
+          </div>
+
+          <p class="source-description">
+            Quy định chế độ tiền lương đối với cán bộ, công chức,
+            viên chức và lực lượng vũ trang.
+          </p>
+
+          <p class="english-description">
+            Decree on salary regimes applicable to public employees
+            and the armed forces.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://vanban.chinhphu.vn/?docid=13651&pageid=27160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mở nguồn chính thức
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://vanban.chinhphu.vn/?docid=13651&pageid=27160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://vanban.chinhphu.vn/?docid=13651&amp;pageid=27160
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            6. Nghị định số 19/2017/NĐ-CP
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn chính thức</span>
+            <span class="tag secondary">Chính phủ</span>
+          </div>
+
+          <p class="source-description">
+            Quy định chế độ tiền lương của công nhân quốc phòng và
+            chế độ phụ cấp thâm niên đối với viên chức quốc phòng.
+          </p>
+
+          <p class="english-description">
+            Decree on salary regimes for national defence workers
+            and seniority allowances for national defence public
+            employees.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://vanban.chinhphu.vn/default.aspx?docid=188523&pageid=27160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mở nguồn chính thức
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://vanban.chinhphu.vn/default.aspx?docid=188523&pageid=27160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://vanban.chinhphu.vn/default.aspx?docid=188523&amp;pageid=27160
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            7. Nghị định số 34/2012/NĐ-CP
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn chính thức</span>
+            <span class="tag secondary">Chính phủ</span>
+          </div>
+
+          <p class="source-description">
+            Quy định về chế độ phụ cấp công vụ.
+          </p>
+
+          <p class="english-description">
+            Decree regulating the civil service allowance regime.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://vanban.chinhphu.vn/?docid=157714&pageid=27160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mở nguồn chính thức
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://vanban.chinhphu.vn/?docid=157714&pageid=27160"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://vanban.chinhphu.vn/?docid=157714&amp;pageid=27160
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            8. Thông tư số 90/2025/TT-BQP
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn chính thức</span>
+            <span class="tag secondary">Bộ Quốc phòng</span>
+          </div>
+
+          <p class="source-description">
+            Hướng dẫn thực hiện bảo hiểm xã hội bắt buộc đối với
+            quân nhân và người làm công tác cơ yếu hưởng lương như
+            đối với quân nhân.
+          </p>
+
+          <p class="english-description">
+            Guidance on compulsory social insurance for military
+            personnel and eligible cipher personnel.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://vanban.chinhphu.vn/?classid=1&docid=215010&pageid=27160&typegroupid=6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mở nguồn chính thức
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://vanban.chinhphu.vn/?classid=1&docid=215010&pageid=27160&typegroupid=6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://vanban.chinhphu.vn/?classid=1&amp;docid=215010&amp;pageid=27160&amp;typegroupid=6
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            9. Thông tư số 96/2025/TT-BQP
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Văn bản được công khai dẫn chiếu</span>
+            <span class="tag secondary">Tiêu chuẩn tiền ăn</span>
+          </div>
+
+          <p class="source-description">
+            Quy định tiêu chuẩn, định lượng ăn và mức tiền ăn cơ bản
+            bộ binh, quân chủng, binh chủng, bệnh nhân điều trị,
+            học viên quân sự quốc tế; chế độ ăn thêm và bồi dưỡng.
+          </p>
+
+          <p class="english-description">
+            Regulations concerning food standards and basic meal
+            allowances for eligible military personnel.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://xaydungchinhsach.chinhphu.vn/de-xuat-chi-tiet-tien-an-dieu-duong-cho-si-quan-quan-doi-nghi-huu-119260106125114785.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Xem nguồn Chính phủ dẫn chiếu
+          </a>
+
+          <a
+            class="source-link secondary-link"
+            href="https://www.phapluatquansu.vn/2025/08/thong-tu-so-962025tt-bqp-quy-inh-tieu.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Xem bản công khai tham khảo
+          </a>
+
+          <p class="url-label">
+            Đường dẫn nguồn Chính phủ:
+          </p>
+
+          <a
+            class="full-url"
+            href="https://xaydungchinhsach.chinhphu.vn/de-xuat-chi-tiet-tien-an-dieu-duong-cho-si-quan-quan-doi-nghi-huu-119260106125114785.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://xaydungchinhsach.chinhphu.vn/de-xuat-chi-tiet-tien-an-dieu-duong-cho-si-quan-quan-doi-nghi-huu-119260106125114785.htm
+          </a>
+
+          <p class="url-label">
+            Đường dẫn bản công khai tham khảo:
+          </p>
+
+          <a
+            class="full-url"
+            href="https://www.phapluatquansu.vn/2025/08/thong-tu-so-962025tt-bqp-quy-inh-tieu.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.phapluatquansu.vn/2025/08/thong-tu-so-962025tt-bqp-quy-inh-tieu.html
+          </a>
+        </article>
+
+        <article class="source-card">
+          <h3>
+            10. Quy định số 01-QĐ/TW ngày 03/02/2026
+          </h3>
+
+          <div class="source-meta">
+            <span class="tag">Nguồn chính thức</span>
+            <span class="tag secondary">Tư liệu Văn kiện Đảng</span>
+          </div>
+
+          <p class="source-description">
+            Quy định của Bộ Chính trị về chế độ đảng phí.
+          </p>
+
+          <p class="english-description">
+            Regulation of the Politburo concerning Party membership
+            fees.
+          </p>
+
+          <a
+            class="source-link"
+            href="https://tulieuvankien.dangcongsan.vn/van-ban-cua-dang/quy-dinh-so-01-qd-tw-ngay-03-2-2026-cua-bo-chinh-tri-ve-che-do-dang-phi.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Mở nguồn chính thức
+          </a>
+
+          <p class="url-label">Đường dẫn đầy đủ:</p>
+
+          <a
+            class="full-url"
+            href="https://tulieuvankien.dangcongsan.vn/van-ban-cua-dang/quy-dinh-so-01-qd-tw-ngay-03-2-2026-cua-bo-chinh-tri-ve-che-do-dang-phi.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://tulieuvankien.dangcongsan.vn/van-ban-cua-dang/quy-dinh-so-01-qd-tw-ngay-03-2-2026-cua-bo-chinh-tri-ve-che-do-dang-phi.html
+          </a>
+        </article>
+      </div>
+
+      <h3>Các cổng tra cứu chính thức</h3>
+
+      <div class="official-portals">
+        <div class="portal-card">
+          <h3>
+            Cổng văn bản Chính phủ
+          </h3>
+
+          <a
+            href="https://vanban.chinhphu.vn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://vanban.chinhphu.vn/
+          </a>
+        </div>
+
+        <div class="portal-card">
+          <h3>
+            Cơ sở dữ liệu quốc gia về văn bản pháp luật
+          </h3>
+
+          <a
+            href="https://vbpl.vn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://vbpl.vn/
+          </a>
+        </div>
+
+        <div class="portal-card">
+          <h3>
+            Cổng thông tin điện tử Bộ Quốc phòng
+          </h3>
+
+          <a
+            href="https://bqp.vn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://bqp.vn/
+          </a>
+        </div>
+
+        <div class="portal-card">
+          <h3>
+            Tư liệu Văn kiện Đảng
+          </h3>
+
+          <a
+            href="https://tulieuvankien.dangcongsan.vn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://tulieuvankien.dangcongsan.vn/
+          </a>
+        </div>
+      </div>
+
+      <p class="important">
+        Khi nội dung của văn bản hoặc chính sách nhà nước được sửa đổi,
+        bổ sung hoặc thay thế, người dùng cần ưu tiên thông tin mới nhất
+        do cơ quan có thẩm quyền công bố.
+      </p>
+    </section>
+
+    <section id="privacy">
+      <h2>Chính sách quyền riêng tư</h2>
+
+      <p class="small-text">
+        Ngày cập nhật gần nhất: 04/08/2026
+      </p>
+
+      <div class="policy-box">
+        <p>
+          Ứng dụng Tính lương quân nhân tôn trọng quyền riêng tư của
+          người dùng. Chính sách này giải thích các loại dữ liệu có thể
+          được xử lý khi người dùng sử dụng ứng dụng.
+        </p>
+      </div>
+
+      <h3>1. Thông tin người dùng nhập</h3>
+
+      <p>
+        Người dùng có thể nhập các thông tin cần thiết để thực hiện phép
+        tính, chẳng hạn như cấp bậc, nhóm, bậc lương, chức vụ, thời gian
+        công tác, tháng tính lương và số ngày ăn.
+      </p>
+
+      <p>
+        Những dữ liệu này được sử dụng để thực hiện phép tính và hiển thị
+        kết quả cho người dùng. Ứng dụng không yêu cầu người dùng cung cấp
+        họ tên, số điện thoại, địa chỉ nhà, danh bạ hoặc vị trí chính xác
+        để sử dụng chức năng tính lương hiện tại.
+      </p>
+
+      <h3>2. Tài khoản người dùng</h3>
+
+      <p>
+        Phiên bản hiện tại không yêu cầu người dùng tạo tài khoản riêng
+        để sử dụng chức năng tính lương.
+      </p>
+
+      <h3>3. Quảng cáo và nhận dạng thiết bị</h3>
+
+      <p>
+        Ứng dụng có thể sử dụng dịch vụ quảng cáo của bên thứ ba. Nhà cung
+        cấp quảng cáo có thể xử lý mã nhận dạng quảng cáo, thông tin thiết
+        bị, địa chỉ IP gần đúng, dữ liệu tương tác quảng cáo và dữ liệu
+        chẩn đoán theo chính sách riêng của họ.
+      </p>
+
+      <h3>4. Giao dịch mua hàng trong ứng dụng</h3>
+
+      <p>
+        Giao dịch mua hàng được thực hiện thông qua hệ thống thanh toán
+        của Google Play. Nhà phát triển không trực tiếp nhận hoặc lưu trữ
+        thông tin thẻ thanh toán của người dùng.
+      </p>
+
+      <p>
+        Ứng dụng có thể sử dụng RevenueCat để kiểm tra trạng thái quyền
+        truy cập hoặc gói đã mua. RevenueCat có thể xử lý mã người dùng
+        ẩn danh, thông tin sản phẩm, trạng thái giao dịch và dữ liệu kỹ
+        thuật cần thiết để cung cấp dịch vụ.
+      </p>
+
+      <h3>5. Dịch vụ của bên thứ ba</h3>
+
+      <ul class="service-list">
+        <li>
+          <strong>Google Privacy Policy:</strong><br />
+
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://policies.google.com/privacy
+          </a>
+        </li>
+
+        <li>
+          <strong>Google advertising technologies:</strong><br />
+
+          <a
+            href="https://policies.google.com/technologies/ads"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://policies.google.com/technologies/ads
+          </a>
+        </li>
+
+        <li>
+          <strong>Google Play Terms of Service:</strong><br />
+
+          <a
+            href="https://play.google.com/about/play-terms/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://play.google.com/about/play-terms/
+          </a>
+        </li>
+
+        <li>
+          <strong>RevenueCat Privacy Policy:</strong><br />
+
+          <a
+            href="https://www.revenuecat.com/privacy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.revenuecat.com/privacy/
+          </a>
+        </li>
+      </ul>
+
+      <h3>6. Lưu trữ và xóa dữ liệu</h3>
+
+      <p>
+        Dữ liệu nhập phục vụ tính toán có thể được lưu tạm thời hoặc lưu
+        cục bộ trên thiết bị tùy theo chức năng của ứng dụng. Người dùng
+        có thể xóa dữ liệu cục bộ bằng cách xóa dữ liệu ứng dụng hoặc gỡ
+        cài đặt ứng dụng khỏi thiết bị.
+      </p>
+
+      <h3>7. Bảo mật</h3>
+
+      <p>
+        Nhà phát triển áp dụng các biện pháp hợp lý để hạn chế truy cập,
+        sử dụng hoặc tiết lộ trái phép. Tuy nhiên, không có phương thức
+        truyền tải hoặc lưu trữ điện tử nào có thể bảo đảm an toàn tuyệt
+        đối.
+      </p>
+
+      <h3>8. Thay đổi chính sách</h3>
+
+      <p>
+        Chính sách quyền riêng tư có thể được cập nhật khi chức năng ứng
+        dụng, dịch vụ bên thứ ba hoặc yêu cầu pháp lý thay đổi. Ngày cập
+        nhật mới nhất sẽ được hiển thị tại đầu mục này.
+      </p>
+
+      <h3>English privacy summary</h3>
+
+      <p class="english-description">
+        The current version does not require a separate user account for
+        salary calculation. User-entered salary parameters are used to
+        perform calculations. Third-party advertising, Google Play
+        Billing and RevenueCat may process device, advertising,
+        transaction and diagnostic information according to their own
+        privacy policies. The developer does not directly receive or
+        store payment card information.
+      </p>
+    </section>
+
+    <section id="terms">
+      <h2>Điều khoản sử dụng</h2>
+
+      <h3>1. Phạm vi của ứng dụng</h3>
+
+      <p>
+        Ứng dụng cung cấp công cụ hỗ trợ tính toán lương dự kiến dựa trên
+        dữ liệu do người dùng lựa chọn và các thông tin tham khảo được
+        công khai.
+      </p>
+
+      <h3>2. Tính chất tham khảo</h3>
+
+      <p>
+        Kết quả trong ứng dụng chỉ mang tính tham khảo và có thể khác với
+        số liệu thực tế do thời điểm áp dụng, trường hợp cá nhân, chế độ
+        đặc thù, dữ liệu đầu vào hoặc thay đổi của văn bản có liên quan.
+      </p>
+
+      <h3>3. Không phải dịch vụ của cơ quan nhà nước</h3>
+
+      <p>
+        Ứng dụng không phải sản phẩm của cơ quan nhà nước, không đại diện
+        cho Bộ Quốc phòng và không cung cấp thủ tục hoặc dịch vụ hành
+        chính công.
+      </p>
+
+      <h3>4. Trách nhiệm của người dùng</h3>
+
+      <p>
+        Người dùng có trách nhiệm kiểm tra thông tin đầu vào và đối chiếu
+        kết quả với bảng lương, quyết định, hướng dẫn hoặc thông báo chính
+        thức của cơ quan có thẩm quyền.
+      </p>
+
+      <h3>5. Nội dung và liên kết bên ngoài</h3>
+
+      <p>
+        Trang này chứa liên kết đến website của cơ quan nhà nước và nhà
+        cung cấp dịch vụ bên thứ ba. Nội dung, khả năng truy cập và chính
+        sách của các website đó do đơn vị sở hữu tương ứng quản lý.
+      </p>
+
+      <h3>6. Mua hàng và khôi phục quyền truy cập</h3>
+
+      <p>
+        Các giao dịch mua hàng được xử lý thông qua Google Play. Việc
+        thanh toán, hủy giao dịch, hoàn tiền và khôi phục giao dịch được
+        thực hiện theo chính sách của Google Play và điều kiện áp dụng
+        đối với từng giao dịch.
+      </p>
+
+      <h3>7. Thay đổi ứng dụng</h3>
+
+      <p>
+        Nhà phát triển có thể cập nhật dữ liệu, giao diện, chức năng,
+        nguồn tham khảo và điều khoản để sửa lỗi, nâng cao chất lượng hoặc
+        phù hợp với thay đổi của quy định liên quan.
+      </p>
+
+      <h3>English terms summary</h3>
+
+      <p class="english-description">
+        The application provides reference calculations only. It is not
+        a government service and does not replace official salary
+        documents or decisions. Users are responsible for verifying
+        their input and checking results against information issued by
+        competent authorities.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Thông tin liên hệ</h2>
+
+      <p>
+        Ứng dụng được phát triển và duy trì bởi một nhà phát triển
+        độc lập.
+      </p>
+
+      <p>
+        Liên hệ và xem thông tin nhà phát triển tại:
+      </p>
+
+      <p>
+        <a
+          href="https://github.com/anhtt92-cloud"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://github.com/anhtt92-cloud
+        </a>
+      </p>
+
+      <p>
+        Người dùng cũng có thể sử dụng địa chỉ email hỗ trợ được công
+        khai trên trang thông tin của ứng dụng tại Google Play.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <strong>Tính lương quân nhân</strong>
+    </p>
+
+    <p>
+      Ứng dụng độc lập – Không đại diện cho cơ quan nhà nước.
+    </p>
+
+    <p>
+      Independent application – Not a government entity.
+    </p>
+
+    <p>
+      Kết quả chỉ mang tính tham khảo.
+    </p>
+
+    <p>
+      Cập nhật lần cuối: 04/08/2026
+    </p>
+
+    <p>
+      <a href="#disclaimer">Về đầu trang</a>
+    </p>
+  </footer>
+</body>
+</html>
